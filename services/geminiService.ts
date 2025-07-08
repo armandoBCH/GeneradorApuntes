@@ -125,7 +125,7 @@ export const generateStudyGuide = async (params: StudyGuideParams): Promise<stri
 
     try {
         const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash-preview-04-17',
+            model: 'gemini-2.0-flash',
             contents: [{ parts: contentParts }],
             config: {
                 systemInstruction: config.systemInstruction,
@@ -150,7 +150,7 @@ export const generatePodcastScript = async (studyGuideContent: string): Promise<
 
     try {
         const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash-preview-04-17',
+            model: 'gemini-2.0-flash',
             contents: finalPrompt,
             config: {
                 // The prompt itself sets the persona and is highly detailed,
