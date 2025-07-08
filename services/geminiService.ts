@@ -10,7 +10,7 @@ import {
 } from '../prompts';
 
 
-if (!import.meta.env.VITE_GEMINI_API_KEY) {
+if (!import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.VITE_GEMINI_API_KEY.trim() === '') {
     throw new Error("La variable de entorno VITE_GEMINI_API_KEY no está configurada. Por favor, configúrala en los ajustes de tu proyecto en Vercel.");
 }
 
