@@ -1,0 +1,6 @@
+{
+  "name": "Apunte Perfecto AI",
+  "description": "Una aplicación que transforma tus apuntes de clase en una guía de estudio perfecta usando IA. Pega tus apuntes, indica el tema y obtén un resumen estructurado, conceptos clave y preguntas de autoevaluación.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
