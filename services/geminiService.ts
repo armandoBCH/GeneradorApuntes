@@ -1,3 +1,4 @@
+
 import { GoogleGenAI, File as GoogleFile } from '@google/genai';
 import { type StudyGuideParams, type Subject } from '../types';
 import { 
@@ -10,7 +11,7 @@ import {
 
 
 if (!import.meta.env.VITE_GEMINI_API_KEY) {
-    throw new Error("API_KEY environment variable not set");
+    throw new Error("La variable de entorno VITE_GEMINI_API_KEY no está configurada. Por favor, configúrala en los ajustes de tu proyecto en Vercel.");
 }
 
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
